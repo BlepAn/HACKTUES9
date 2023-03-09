@@ -1,66 +1,62 @@
 <!DOCTYPE html>
 <html>
     <head>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel = "index" href="index.css">
         <style>
             
             div {
-                background-color: rgb(246, 244, 244);
-                width: 150px;
-                height: 10px;
-                border: 3px solid rgb(1, 16, 1);
-                padding: 50px;
-                margin: auto;
-                justify-content: space-between;
-                
+                margin-top: 250px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: baseline;
+                align-content: space-between;
             }
 
             body {
                 background-image: url('background.jpg');
                 background-size: cover;
+                
+            }
+            
+            h1 {
+                text-align: center;
+                color: rgb(255, 255, 255);
+                font-size: 100px;
+                margin-top: 100px;
+                justify-content: center;
+	            align-items: center;
             }
 
-            .button {
+            a {
+                font-size: 30px !important;
                 border: rgb(1, 16, 1);
                 color: rgb(4, 4, 4);
-                background-color: rgb(131, 215, 140);
-                padding: 15px 32px;
-                text-align: center;
-                display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
+                background-color: rgb(102, 153, 255);
+                padding: 100px 100px;
+                
                 cursor: pointer;
+                width: 400px;
+                height: 250px;
             }
 
-
-            .h1 {
-                margin: auto;
-            }
-
-            
-            
         </style>
     </head>
 
-<body>
+    <body>
 
-<h1>Find out your password</h1>
+        <h1>MyHeader</h1>
 
-<form>
-    <input type="text" id="mastetrpassword" name="masterpassword"><br><br>
-    <input type="text" id="website" name="website"><br><br>
-    <input type="text" id="username" name="username"><br><br>
-</form>
-
-<button class="button">Enter</button>
-
-<div class="content">Enter password</div>
-<div>Enter website</div>
-<div>Enter</div>
-
-</body>
+        <div>
+            <a id="showpass" type="button" class="btn btn-outline-light" href = "./showpassword.html"> Tell me my password</a>
+            <a type="button" class="btn btn-outline-light">Save my password</a>
+            <a type="button" class="btn btn-outline-light">Change my password</a>
+            <a type="button" class="btn btn-outline-light">Generate a password</a>
+        
+        </div>
+    </body>
 
 </html>
 

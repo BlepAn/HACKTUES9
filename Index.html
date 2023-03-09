@@ -2,60 +2,36 @@
 <html>
     <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <link rel = "index" href="index.css">
+        <link rel="stylesheet" type="text/css" href="index.css" />
         <style>
             
-            div {
-                margin-top: 250px;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
-                align-items: baseline;
-                align-content: space-between;
-            }
-
-            body {
-                background-image: url('background.jpg');
-                background-size: cover;
-                
-            }
             
-            h1 {
-                text-align: center;
-                color: rgb(255, 255, 255);
-                font-size: 100px;
-                margin-top: 100px;
-                justify-content: center;
-	            align-items: center;
-            }
-
-            a {
-                font-size: 30px !important;
-                border: rgb(1, 16, 1);
-                color: rgb(4, 4, 4);
-                background-color: rgb(102, 153, 255);
-                padding: 100px 100px;
-                
-                cursor: pointer;
-                width: 400px;
-                height: 250px;
-            }
 
         </style>
     </head>
 
-    <body>
+    <body class="body">
 
-        <h1>MyHeader</h1>
+        <div class="randompass">
+            <h1>MyHeader</h1>
+            <a id="randompass" type="button" class="btn btn-outline-light">Generate a password</a>
+            
+        </div>
 
-        <div>
-            <a id="showpass" type="button" class="btn btn-outline-light" href = "./showpassword.html"> Tell me my password</a>
-            <a type="button" class="btn btn-outline-light">Save my password</a>
-            <a type="button" class="btn btn-outline-light">Change my password</a>
-            <a type="button" class="btn btn-outline-light">Generate a password</a>
+        
+
+        <div class="showpass">
+            <a id="showpass" type="button" class="btn btn-outline-light" href = "./showpassword.html"> Show me my password</a>
+            
         
         </div>
+
+        <div class="savechangepass">
+            <a id="savepass" type="button" class="btn btn-outline-light" href ="savepassword.html">Save my password</a>
+            <a id="changepass" type="button" class="btn btn-outline-light"  href = "changepassword.html">Change my password</a>
+            
+        </div>
+       
     </body>
 
 </html>

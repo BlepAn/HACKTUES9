@@ -5,19 +5,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
-  <link href="test style.css" rel="stylesheet" type="text/css" />
+  <link href="encode and decode.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <label for="enc-space">Password</label>
   <input type="text" id="enc-space">
-  <button onclick="save_enc = true, saveText(), encryptMessage()">Encrypt</button>
-  
-  <label for="dec-space">Jumble</label>
-  <input type="text" id="dec-space">
-  <button onclick="save_dec = true,saveText(), decryptMessage()">Decrept</button>
+  <button onclick="save_enc = true, saveText()">Enter</button>
 
-  <script src="test script.js"></script>
+  <label for="master-space">MasterKey</label>
+  <input type="text" id="master-space">
+  <button onclick="save_master = true, saveText()">Enter</button>
+
+  <button onclick=" encryptMassage()">Encrypt</button>
+  <button onclick=" decryptMassage()">Decrypt</button>
+
+  <script src="encode and decode.js"></script>
 </body>
 
 </html>

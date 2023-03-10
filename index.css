@@ -168,7 +168,7 @@ div.table{
 }
 
 table, th, tr {
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     border-collapse: collapse;
 }
 
@@ -180,12 +180,12 @@ table {
 
 th, td {
 padding: 8px;
-text-align: left;
+text-align: center;
 border-bottom: 1px solid #DDD;
 }
 
 tr:hover {
-    background-color: #232d32; animation-duration: 1s;
+    background-color: #073d59; animation-duration: 1s;
 }
 
 #submit{

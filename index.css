@@ -1,8 +1,9 @@
 body {
-    background-image: url('background.jpg');
-    background-size: cover;
+    background-image: url('background3.jpg');
+    background-image: repeat;
     
 }
+
 
 div {
     margin-top: 10px;

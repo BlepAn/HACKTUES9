@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Password lizard</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <label for="user-space">User</label>
+  <input type="text" id="user-space">
+  <br>
+  <label for="url-space">URL</label>
+  <input type="text" id="url-space">
+  <br>
+  <label for="password-space">Password</label>
+  <input type="text" id="password-space">
+  <br>
+  <label for="masterKey-space">Master Key</label>
+  <input type="text" id="masterKey-space">
+  <br>
+  <button onclick="saveUser()">ADD</button>
+  <button onclick="removeUser()">Remove</button>
+  <br><br>
+
+  <button onclick="createFile()">Create File</button>
+  <button onclick="showUserData()">Show File</button>
+  <br><br>
+
+  <button onclick="generatePassword(10)">Generate password?</button>
+  <output id="password-output"></output>
+  <br><br>
+
+  <label for="new-password-space">Enter new password</label>
+  <input type="text" id="new-password-space">
+  <br>
+  <button onclick="changePassword( 
+    document.getElementById('user-space').value, 
+    document.getElementById('url-space').value, 
+    document.getElementById('new-password-space').value
+  )">Change Password</button>
+  <br><br>
+
+  <label for="see masterkey of acounts">
+  <button onclick="showUser()">showUser</button>
+  <output type="text" id="keypass-space"></output>
+  <br>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
